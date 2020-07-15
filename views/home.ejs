@@ -1,0 +1,12 @@
+<%- include('partials/header') -%>
+
+<h1>HOME</h1>
+<p class="b"><%= startingContent %></p>
+
+<% for (var i = 0; i<titles.length; i++){ %>
+        <h1><%= titles[i] %></h1>
+        <p class="b"> <%= contents[i] %> </p>
+        <a href="/posts/<%= titles[i] %>">Read More..</a>
+<% } %>
+
+<%- include('partials/footer') -%>
